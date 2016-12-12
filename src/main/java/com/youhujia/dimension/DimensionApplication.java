@@ -17,12 +17,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class DimensionApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(DimensionApplication.class, args);
-    }
+    public static void main(String[] args) {SpringApplication.run(DimensionApplication.class, args);}
 
-    @Bean
-    ProtobufHttpMessageConverter protobufHttpMessageConverter() {
-        return new ProtobufHttpMessageConverter();
-    }
 }
